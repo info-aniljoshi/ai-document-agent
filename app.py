@@ -1,5 +1,4 @@
 from dotenv import load_dotenv
-import os
 import streamlit as st
 
 from langchain_community.document_loaders import PyPDFLoader
@@ -14,7 +13,7 @@ load_dotenv()
 
 llm = ChatGroq(
     model="llama-3.1-8b-instant",
-    api_key=os.getenv("GROQ_API_KEY")
+     api_key=st.secrets["GROQ_API_KEY"]
 )
 
 # session state
