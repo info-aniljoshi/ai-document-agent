@@ -1,6 +1,8 @@
-langchain-google-genai
+streamlit
 langchain
 langchain-community
-langchain-text-splitters
-dotenv
+langchain-groq
 pypdf
+python-dotenv
+sentence-transformers
+faiss-cpu
